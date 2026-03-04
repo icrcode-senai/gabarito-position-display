@@ -50,6 +50,15 @@ h2 {
     color: var(--cor-secundaria);
 }
 
+.nota {
+    background: #fff8a6;
+    padding: 15px;
+    border-left: 6px solid #f85f30;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
 .box {
     padding: 15px;
     background: var(--cor-principal);

@@ -12,6 +12,7 @@
 
     <nav class="menu">
         <h3>Propriedades CSS</h3>
+
     </nav>
 
     <header>
@@ -20,9 +21,25 @@
     </header>
 
     <main>
+        <section>
+            <h2>Position: fixed</h2>
+            <p class="nota">
+                📌 <strong>Position: fixed no men flutuante do site</strong> → O menu usa <code>position: fixed;</code>, o que faz com
+                que
+                ele fique preso à tela, mesmo quando a página rola (scroll). Com <code>top: 0;</code> ele fica colado no
+                topo, <code>width: 100%;</code> faz ocupar toda a largura da tela, e <code>z-index: 1000;</code> garante
+                que
+                ele fique na frente dos outros elementos.
+            </p>
+        </section>
 
         <section>
             <h2>Display: block</h2>
+            <p class="nota">
+                📌 <strong>Display: block</strong> → O elemento ocupa toda a largura disponível da tela e sempre começa
+                em uma nova linha. Mesmo que tenha espaço ao lado, ele “quebra” a linha automaticamente. Permite definir
+                largura, altura, margem e padding normalmente.
+            </p>
             <div class="box block">Teste 1</div>
             <div class="box block">Teste 2</div>
             <div class="box block">Teste 3</div>
@@ -31,23 +48,38 @@
 
         <section>
             <h2>Display: inline</h2>
+            <p class="nota">
+                📌 <strong>Display: inline</strong> → O elemento fica na mesma linha que outros elementos, ocupando
+                apenas o espaço do seu conteúdo. Não aceita largura e altura diretamente. Ideal para textos ou pequenos
+                elementos lado a lado.
+            </p>
             <span class="box inline">Teste 1</span>
             <span class="box inline">Teste 2</span>
             <span class="box inline">Teste 3</span>
             <span class="box inline">Teste 4</span>
             <span class="box inline">Teste 5</span>
             <span class="box inline">Teste 6</span>
-            
+
         </section>
 
         <section>
             <h2>Display: inline-block</h2>
+            <p class="nota">
+                📌 <strong>Display: inline-block</strong> → Mistura o comportamento do inline com o block. Fica na mesma
+                linha que outros elementos, mas permite definir largura e altura. Muito usado para criar botões e cards
+                alinhados.
+            </p>
             <div class="box inline-block">Teste 1</div>
             <div class="box inline-block">Teste 2</div>
         </section>
 
         <section>
             <h2>Display: flex</h2>
+            <p class="nota">
+                📌 <strong>Display: flex</strong> → Ativa o modo Flexbox. Organiza os elementos filhos em linha (ou
+                coluna) de forma flexível, facilitando alinhamento, espaçamento e distribuição automática dos itens
+                dentro do container.
+            </p>
             <div class="flex">
                 <div class="box">Teste 1</div>
                 <div class="box">Teste 2</div>
@@ -63,6 +95,10 @@
 
         <section>
             <h2>Display: grid</h2>
+            <p class="nota">
+                📌 <strong>Display: grid</strong> → Ativa o sistema de grade (Grid Layout). Permite organizar elementos
+                em linhas e colunas de forma estruturada e responsiva. Ideal para layouts mais complexos.
+            </p>
             <div class="grid">
                 <div class="box">Teste 1</div>
                 <div class="box">Teste 2</div>
@@ -75,12 +111,37 @@
         </section>
 
         <section>
+            <p class="nota">
+                📌 <strong>Position</strong> → Controla como o elemento é posicionado na página. Pode ser estático
+                (padrão), relativo, absoluto, fixo ou sticky, alterando como ele se comporta em relação ao fluxo normal
+                do documento.
+            </p>
             <h2>Position</h2>
 
+            <p class="nota">
+                📌 <strong>Position: relative</strong> → O elemento continua ocupando seu espaço normal na página,
+                mas pode ser deslocado usando top, bottom, left ou right. Também serve como referência para
+                elementos com position: absolute dentro dele.
+            </p>
+            <p class="nota">
+                📌 <strong>Position: absolute</strong> → O elemento sai do fluxo normal da página e é
+                posicionado em relação ao elemento pai que tenha position diferente de static. Pode ser colocado
+                exatamente onde você quiser usando top, right, bottom e left.
+            </p>
+
+
             <div class="relative">
-                Relative
-                <div class="absolute">Absolute</div>
+                <p>Relative</p>
+
+                <div class="absolute">
+                    <p>Absolute</p>
+                </div>
             </div>
+
+            <p class="nota">
+                📌 <strong>Position: sticky</strong> → O elemento se comporta como relativo até atingir um limite
+                (definido com top, por exemplo). Depois disso, ele “gruda” na tela durante o scroll.
+            </p>
 
             <div class="sticky">
                 Sticky
