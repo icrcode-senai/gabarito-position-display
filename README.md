@@ -1,25 +1,24 @@
-# Display and Position in CSS
+# Propriedades CSS: Display e Position
 
-This project is designed to explore and explain the `display` and `position` properties in CSS which are fundamental to organizing and laying out web elements.
+## Visão Geral
+As propriedades Display e Position no CSS são fundamentais para o layout e a estrutura de uma página web. Elas controlam como os elementos são exibidos e posicionados na tela.
 
-## Overview
+## Propriedades Display
+A propriedade Display determina como um elemento é exibido na página. Os valores principais incluem:
+- **block**: O elemento ocupa toda a largura disponível e inicia em uma nova linha.
+- **inline**: O elemento ocupa apenas a largura necessária e não inicia em uma nova linha.
+- **inline-block**: O elemento é exibido como inline, mas aceita largura e altura definidas.
+- **none**: O elemento não é exibido na página.
 
-CSS properties control how elements are rendered on the web page. The two main properties we focus on in this project are:
+Esses valores afetam a forma como os elementos se comportam em relação aos outros elementos na página.
 
-### Display
-The `display` property determines how an element is displayed on the web page. Common values include:
-- `block`: The element takes up the full width available, with a new line before and after.
-- `inline`: The element only takes up as much width as necessary, allowing other elements to be placed beside it.
-- `flex`: Enables a flex context for all its direct children, allowing for flexible layouts.
-- `grid`: Enables a grid layout for child elements, providing powerful options for two-dimensional layouts.
+## Propriedades Position
+A propriedade Position define como um elemento é posicionado na página. Os principais valores são:
+- **static**: O valor padrão. Os elementos são posicionados com base no fluxo normal do documento.
+- **relative**: O elemento é posicionado em relação à sua posição original.
+- **absolute**: O elemento é removido do fluxo do documento e posicionado em relação ao seu antecessor posicionado mais próximo.
+- **fixed**: O elemento é posicionado em relação à janela de visualização e não se move durante o scroll.
+- **sticky**: O elemento é tratado como relativo até que seu bloco de contenção se torne o limite médio da página, e então é tratado como fixo.
 
-### Position
-The `position` property determines how an element is positioned in the document flow. Values include:
-- `static`: The default position; elements are positioned according to the normal flow of the document.
-- `relative`: Elements are positioned relative to their normal position, allowing for slight adjustments without affecting other elements.
-- `absolute`: Elements are positioned relative to their nearest positioned ancestor, bypassing the normal document flow.
-- `fixed`: Elements are positioned relative to the viewport and stay in place when scrolling.
-- `sticky`: A hybrid of relative and fixed positioning, where elements can scroll until they reach a defined position.
-
-## Purpose
-The purpose of this project is to create an interactive demonstration that helps users understand how these properties work, and how they can be effectively utilized in web design.
+## Propósito
+O entendimento das propriedades Display e Position é crucial para a criação de layouts responsivos e eficazes. Essas propriedades permitem que os desenvolvedores web controlem a apresentação visual e a interação com os usuários em diferentes tamanhos de tela.
