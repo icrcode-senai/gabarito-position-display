@@ -1,0 +1,104 @@
+:root {
+  --cor-principal: #f64141;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+section {
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* DISPLAY */
+
+.block {
+    display: block;
+    background: var(--cor-principal);
+    margin: 10px 0;
+}
+
+.inline {
+    display: inline;
+    background: var(--cor-principal);
+}
+
+.inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background: var(--cor-principal);
+    margin: 10px;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+.flex div {
+    background: var(--cor-principal);
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 10px;
+}
+
+.grid div {
+    background: var(--cor-principal);
+    padding: 20px;
+}
+
+/* POSITION */
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.214);
+    color: white;
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+    background: var(--cor-principal);
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--cor-principal);
+    color: white;
+    padding: 5px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background: rgb(50, 108, 255);
+    padding: 10px;
+}
